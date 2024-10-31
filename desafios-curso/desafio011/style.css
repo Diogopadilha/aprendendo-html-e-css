@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    background: black url('imagens/frame-iphone.png') center top no-repeat;
+    
+    height: 200px;
+}

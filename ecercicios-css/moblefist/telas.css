@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*Tamanhos de telas:
+pequenas telas: ate 600px,
+celular: min 600px max 768px   
+tablet: min 768px  max 992px    
+pc: min 992px max 1200px    
+grandes telas acima de 1200px */
+
+@media print {
+    body{
+        background-image: url(imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        border: 2px solid black;
+    }
+
+    main > h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        font-size: 1.5em;
+        content: "pagina criada para teste";
+        text-decoration: overline;
+    }
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#computador{display: none;}
+    img#televisao{display: none;}
+    img#impressora{display: block;}
+    
+}
+
+@media  screen and (max-width:550px) {
+    body{
+        background: black url(imagens/back-phone.jpg) center center no-repeat;
+        background-size: cover;
+    }
+        img#celular{display: block;}
+        img#tablet{display: none;}
+        img#computador{display: none;}
+        img#televisao{display: none;}
+        img#impressora{display: none;}
+
+}
+
+@media screen and (min-width:550px) and (max-width:850px) {
+    body{
+        background-image: url(imagens/back-tablet.jpg);
+    }
+    img#celular{display: none;}
+    img#tablet{display: block;}
+    img#computador{display: none;}
+    img#televisao{display: none;}
+    img#impressora{display: none;}
+}
+
+@media screen and (min-width:850px) and (max-width:1050px) {
+    body{
+        background-image: url(imagens/back-pc.jpg);
+    }
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#computador{display: block;}
+    img#televisao{display: none;}
+    img#impressora{display: none;}
+}
+
+@media screen and (min-width:1050px) {
+    body{
+        background-image: url(imagens/back-tv.jpg);
+    }
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#computador{display: none;}
+    img#televisao{display: block;}
+    img#impressora{display: none;}
+}

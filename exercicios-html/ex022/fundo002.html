@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundo002</title>
+    <style>
+        body{
+            
+            background-repeat: no-repeat;/*para nao repetir a imagem, tambem da para colocar repeat em x "posicao vertical 
+            e y posicao horizontal"*/
+        }
+        .container{
+            background: purple url('imagens/target001.png');
+            background-position: center;
+            position: relative;
+            width: 500px;
+            height: 400px;
+
+        }
+        .area{
+            position: absolute;
+            background-position: center;
+            background-image: url('imagens/target001.png');
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50% ,-50%);
+            /*para centralizar caixas em meios corretos usamos a caixa de fora em posicao relativa e a caixa de dentro em posicao absoluta assim
+            podemos mecher no top e left mas o inicio da caixa interna sera no meio da caixa externa para centralizar meio a meio usamos o transfor: translate
+             (
+            para cima numeros negativos para baixo numeros positivos
+
+            para direita negativo, para  esquerda numeros positivo
+
+            )*/
+        }
+    </style>
+</head>
+<body>
+    
+    <!--O eixo inicial da imagem em background e direita em cima mas da para modificar o ponto de partida com backgound-position que sao
+    direita em cima,
+    direita centro
+    direita em baixo-->
+
+    <!--
+    meio em cima 
+    meio meio
+    meio em baixo-->
+
+    <!--
+    esquerda em cima
+    erquerda meio
+    esquerda em baixo  -->
+
+    <!--para uma melhor resolucao do fundo da imagem usa-se background size (content)
+    pode-s usar porcentagem px -->
+
+    <!--para fixar a imagem e rolar so o conteudo usa-se
+    background attachament(fixed)-->
+    <!--shorthand bacground
+    1 color
+    2 image
+    3 position
+    4 repeat
+    5 size
+    6 attachament-->
+
+    <!--background( black url()center center no-repeat fixed)
+    background size(cover)-->
+
+    <section class="container">
+        <article class="area">
+
+        </article>
+    </section>
+</body>
+</html>

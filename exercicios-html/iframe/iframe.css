@@ -1,0 +1,17 @@
+main{
+    width: 450px;
+    height: 500px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+@media screen and(max-width:400px) {
+    main iframe {
+        width: 90vw;
+        display:block;
+        margin: auto;
+    }
+}
+

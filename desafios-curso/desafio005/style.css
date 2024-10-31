@@ -1,0 +1,35 @@
+body{
+    background-image: linear-gradient(to right,lightgray, gray);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+main{
+    background: white;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 10px 15px;
+    background-color: antiquewhite;
+}
+p{
+    text-align: justify;
+}
+h1,h2{
+    text-align: center;
+}
+.foto{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+    color: red;
+}
